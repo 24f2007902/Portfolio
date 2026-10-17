@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<style>
+  :root {
+    --bg: #f6f7f4;
+    --ink: #1c2321;
+    --muted: #55605b;
+    --line: #d5dad6;
+    --accent: #1f6f5c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151a18;
+      --ink: #e8ece9;
+      --muted: #9aa6a0;
+      --line: #2b3431;
+      --accent: #6cc4aa;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.65;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.25rem 5rem; }
+  h1 { font-size: 2.4rem; line-height: 1.15; margin: 0 0 0.5rem; }
+  h2 { font-size: 1.25rem; margin: 3rem 0 0.75rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  p { margin: 0 0 1rem; }
+  .lead { color: var(--muted); font-size: 1.15rem; }
+  ul { padding-left: 1.2rem; margin: 0; }
+  li { margin-bottom: 0.75rem; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hi, I'm a data science student.</h1>
+  <p class="lead">I study at IIT Madras and build small tools to learn how data and the web fit together.</p>
+
+  <h2>Work I've done</h2>
+  <ul>
+    <li><strong>Config service.</strong> A FastAPI endpoint that merges defaults, YAML, .env and environment variables, applies overrides, and hides secrets.</li>
+    <li><strong>JSON repair.</strong> Found and fixed syntax errors in a 180 KB JSON file without changing its data.</li>
+    <li><strong>Shell automation.</strong> Reorganized files by category using shell commands and verified the result with a SHA-256 hash.</li>
+    <li><strong>Sales analysis.</strong> Calculated regional revenue from a CSV of transactions.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Email me at <!--email_off-->24f2007902@ds.study.iitm.ac.in<!--/email_off-->.</p>
+</main>
+</body>
+</html>
